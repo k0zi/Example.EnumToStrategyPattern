@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Example.EnumToStrategyPattern": {
+      "commandName": "Project",
+      "commandLineArgs": "First"
+    }
+  }
+}

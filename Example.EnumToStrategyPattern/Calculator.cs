@@ -1,6 +1,6 @@
 ﻿namespace Example.EnumToStrategyPattern
 {
-    public class Calculator
+    public class Calculator : ICalculator
     {
         public MyTypes Type { get; set; }
 
@@ -19,6 +19,11 @@
                 default:
                     return Number;
             }
+        }
+
+        public string GetTypeName()
+        {
+            return Type.ToString();
         }
     }
 }
