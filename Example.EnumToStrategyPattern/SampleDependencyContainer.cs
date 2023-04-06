@@ -4,7 +4,7 @@ namespace Example.EnumToStrategyPattern
 {
     partial class Program
     {
-        internal class DummyDependencyContainer
+        internal class SampleDependencyContainer
         {
             internal static IEnumerable<ICalculator> GetCalculators()
             {

@@ -13,7 +13,7 @@ namespace Example.EnumToStrategyPattern
                 var number = 100;
                 //var type = (MyTypes)Enum.Parse(typeof(MyTypes), args[0]);
                 //var calculator = new Calculator() { Number = number, Type = type };
-                var calculator = new CalculatorFactory(DummyDependencyContainer.GetCalculators()).GetCalculator(args[0]);
+                var calculator = new CalculatorFactory(SampleDependencyContainer.GetCalculators()).GetCalculator(args[0]);
                 calculator.Number = number;
                 if(calculator.Calculate() == 100)
                 {
